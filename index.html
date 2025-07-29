@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profil Regina Wilian JKT48</title>
+  <style>
+    /* === Background Aesthetic === */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f0f4ff, #5f3069);
+      color: #111827;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 30% 30%, rgba(194, 225, 255, 0.4), transparent 50%),
+                  radial-gradient(circle at 70% 70%, rgba(255, 207, 240, 0.4), transparent 50%);
+      z-index: -1;
+      filter: blur(60px);
+    }
+
+    /* === Animasi Muncul === */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      position: relative;
+      z-index: 1;
+    }
+
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container {
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .biodata {
+      margin-top: 30px;
+    }
+
+    .biodata h2 {
+      font-size: 24px;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 10px;
+    }
+
+    .biodata ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .biodata li {
+      padding: 8px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .biodata span {
+      font-weight: bold;
+      display: inline-block;
+      width: 160px;
+    }
+
+    .bio {
+      margin-top: 30px;
+    }
+
+    .bio h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .bio p {
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 600px) {
+      .title {
+        font-size: 24px;
+      }
+
+      .biodata span {
+        width: 120px;
+      }
+    }
+
+    .biodata-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px; /* Jarak antara foto dan tulisan */
+  margin-top: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+
+}
+
+
+.foto {
+  flex-shrink: 0;
+}
+
+.foto img {
+  width: 260px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.isi-biodata {
+  flex: 1;
+  padding-top: 10px;
+}
+
+.isi-biodata h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.isi-biodata p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #334155;
+}
+
+.isi-biodata p span {
+  font-weight: bold;
+  color: #0f172a;
+  display: inline-block;
+  width: 160px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .biodata-wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .isi-biodata {
+    padding-top: 20px;
+  }
+
+  .isi-biodata p span {
+    width: auto;
+    display: block;
+    margin-bottom: 4px;
+  }
+}
+
+ /* === GYMNASTIK STYLE === */
+.gymnastic-layout {
+  display: flex;
+  max-width: 960px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gymnastic-image {
+  flex: 1;
+}
+
+.gymnastic-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gymnastic-content {
+  flex: 2;
+  padding: 24px 32px;
+}
+
+.gymnastic-content h2 {
+  margin-top: 0;
+  color: #2a2a2a;
+}
+
+.gymnastic-content p {
+  color: #444;
+  line-height: 1.5;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container fade-in">
+    <div class="title">Profil dan Biodata Regina Wilian JKT48 Gen 12</div>
+
+    <div class="image-container">
+      <img src="https://i.pinimg.com/736x/cf/8c/70/cf8c70d1dddf921b031855063c3c21da.jpg" alt="Foto Regina Wilian JKT48">
+    </div>
+
+    <div class="biodata">
+      <h2>Biodata Lengkap</h2>
+      <uli>
+        <li><span>Nama Lengkap:</span> Regina Wilian Hapsari</li>
+        <li><span>Nama Panggilan:</span> Regie</li>
+        <li><span>Tempat, Tanggal Lahir:</span> Surakarta,Jawa Tengah 10 Desember 2009</li>
+        <li><span>Umur:</span> 16 tahun (per 2025)</li>
+        <li><span>Hobi:</span> Bermain basket dan Menggambar</li>
+         <li><span>Golongan Darah:</span> B</li>
+          <li><span>Zodiak:</span>Sagitarius</li>
+           <li><span>Tinggi Badan:</span> 172 CM</li>
+           <li><span>JIKOSHOUKAI:</span> Bagai Kalium Yang Bereaksi Dengan Air Aku Akan Meledak Dengan Semangatku</li>
+
+           
+      
+ 
+        <li><span>Agensi:</span> JKT48 Project</li>
+        <li><span>Grup:</span> JKT48 Generasi 12</li>
+        <li><span>Akun Instagram:</span> @jkt48.regina</li>
+        <li><span>Akun TikTok:</span> @jkt48.regie</li>
+        <li><span>Akun Twitter/X:</span> @Regie_JKT48</li>
+      
+    </div>
+
+    <div class="bio">
+      <h2>Tentang Regie JKT48</h2>
+      <p>
+        Regina Wilian adalah salah satu anggota generasi ke-12 dari JKT48. Ia diperkenalkan sebagai member pada tahun 2023 dan langsung mencuri perhatian penggemar karena pesonanya yang menawan dan semangatnya yang tinggi.
+      </p>
+      <p>
+        Saat audisi gen 12, Regie dipanggil Ina karena nama depannya adalah "Regina". Ketika Gen 12 diperkenalkan di event JAK JAPAN MATSURI pada 18 November 2023, Pukul 13.35 Regie menjelaskan alasan dirinya bergabung di JKT48 adalah ingin membahagiakan semua orang.
+        Regie awalnya suka menari sendiri di kamar dengan mengulik koreografi Kpop yang sering ditontonnya,Regie juga menyukai salah satu idol group bernama NOGIZAKA46 yaitu saingan dari AKB48,dari situ juga regie termotivasi untuk menjadi seorang idol hebat dan bisa membuat semua orang terpukau dengan penampilannya. Regie merasa bahwa dirinya belum terlalu lihai menari, tetapi menyadari bahwa dirinya memiliki minat untuk mempelajarinya lebih serius. Hal tersebut yang kemudian membuat Regie mulai menemukan passion untuk menjadi seorang idol dan pada akhirnya mendaftarkan diri ke audisi generasi 12 dan resmi diperkenalkan sebagai trainee JKT48 pada 18 November 2023.
+        Regie senang bisa belajar lebih banyak hal tentang menari di JKT48 dan ingin belajar banyak koreografi yang beragam dari lagu-lagu JKT48. Regie menyadari bahwa di awal masa trainee, dirinya masih merasa sangat kaku setiap menari karena belum terbiasa. Kini, Regie semakin berkembang hingga bisa dipercaya menjadi salah satu trainee generasi 12 pertama yang debut setlist reguler bersama member inti JKT48.
+        <p>
+          <p>
+            
+          </p>
+        </p>
+        Regie sangat aktif menghabiskan masa remajanya dengan berbagai kegiatan positif. Sebelum bergabung dengan JKT48, Regie kerap mengikuti ajang perlombaan di bidang beauty pageant. Di usianya yang masih muda, Regie telah meraih berbagai penghrgaan seperti 4th Runner Up Puteri Cilik Jawa Tengah 2020, 2nd Runner Up Indonesia’s Girl Junior 2020, dan Puteri Lingkungan Hidup Jawa Tengah 2020.
+        <p>
+          <p>
+            Regie adalah salah satu anggota yang diperkenalkan dari generasi 12 JKT48. Pada waktu itu, video perkenalan Regie merupakan salah satu video yang mempunyai jumlah penonton paling banyak dalam aplikasi YouTube.
+             Regie merupakan seseorang dengan pribadi yang ceria, rajin, ramah, suka membantu, dan perhatian dengan temannya. Selain itu, Regie juga dikenal sebagai seorang yang penuh semangat dan enerjik, sebab tariannya yang lincah.
+          </p>
+        </p>
+        <p>
+        
+        </p>
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+
+         <h2>SPORT EDITION REGIE JKT48</h2>
+        <p>
+         Ternyata Regie melakukan beberapa olahraga anti mainstream loh guys, olahraga ini juga ternyata menjadi faktor kenapa Regie bisa tinggi guys, kalian mau tau? yu cek dibawah.
+
+        
+        </p>
+        
+        <div class="biodata-wrapper">
+  <div class="foto">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwG_qjiQjvZ_zGmni7uL_oW4s0YOzuQWRseA&s" alt="Foto Profil">
+    <p>
+      <p>
+
+      </p>
+    </p>
+  </div>
+
+  <div class="isi-biodata">
+    <h1>1.BASKET</h1>
+   <p>
+
+   </p>
+    Dikenal sebagai salah satu anggota JKT48 yang paling tinggi, Regie yang lahir tahun 2009 ini sudah sangat lama suka dan rutin latihan basket. Regie sangat suka basket hingga akhirnya tergabung dalam sebuah klub basket di Surakarta yang mempunyai nama HUMBLE BASKETBALL dan berkesempatan untuk mengikuti berbagai turnamen basket antar klub. Selain basket klub regie juga ikut basket di sekolahan nya yaitu KALAM KUDUS dan rutin mengikuti turnamen antar sekolahan. Dalam suatu turnamen, Regie sempat menjadi pemain dengan poin tertinggi dengan meraih gelar top score, top rebound, top block, sekaligus top steal.
+    <p>
+      <div class="container">
+  <div class="image-container">
+    <img src="https://image.idntimes.com/post/20240728/0912a13941d90c6b315c689d92a92d40-5db3e94a25c0b59a75d6db2e7f79f70a.jpg" alt="Foto Regina Wilian">
+  </div>
+
+  <div class="text-container">
+    <h2>2.GYMNASTIC</h2>
+    <P>
+<strong>Regie ternyata juga memiliki keahlian di bidang gymanstics. Regie sempat memenangkan beberapa perlombaan, seperti Juara 3 Senam Ritmik Free Hand Tingkat Pekan Olahraga Provinsi dan Juara 2 Senam Ritmik Alat Gada Tingkat Kejuaraan Provinsi.
+  </strong>
+      </P>
+  </div>
+
+   
+
+
+</div>
+                 
+
+    
+ 
+   
+       
+    
+
+
+
+        
+
+
